@@ -1,4 +1,5 @@
-import fetchData from "./index";
+import { fetchData, API } from "./index";
+import axios from "axios";
 
 jest.mock("axios");
 
@@ -20,9 +21,9 @@ describe("fetchData", () => {
     };
     axios.get.mockImplementationOnce(() => Promise.resolve(data));
 
-    await expect(fetchData("react")).resolves.toEqual(data);
+    await expect(fetchData("us")).resolves.toEqual(data);
 
-    expect(axios.get).toHaveBeenCalledWith(`${API}/search?query=react`);
+    expect(axios.get).toHaveBeenCalledWith(`${API}/?results=200&nat=us`);
   });
   it("fetches erroneously data from an API", async () => {
     const errorMessage = "Network Error";
