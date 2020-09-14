@@ -1,0 +1,17 @@
+.center-align {
+  display: flex;
+  justify-content: center;
+}
+
+.background {
+  background-color: navy;
+  border-bottom: rgb(196, 13, 13) solid 7px;
+}
+
+@media only screen and (max-width: 600px) {
+  .background {
+    background-color: navy;
+    border-bottom: rgb(196, 13, 13) solid 7px;
+    width: 700px;
+  }
+}
