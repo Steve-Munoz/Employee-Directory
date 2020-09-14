@@ -5,7 +5,7 @@ import TableData from "./Components/TableData";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
       <TableData />
     </div>
