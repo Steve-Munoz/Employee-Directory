@@ -1,26 +1,16 @@
-// import axios from "axios";
-// import RandomUserAPI from "../utils/utils";
-
-// export default class Data extends Component{
-//     state = {
-//         users: [{}],
-//         order: "descend",
-//         filteredUsers: [{}]
-//     }
-
-//     headings = [
-//         { name: "Image", width: "10%"},
-//         { name: "Name", width: "10%"},
-//         { name: "Phone", width: "20%"},
-//         { name: "Email", width: "20%"}
-
-//     ]
-// }
-
 import React, { Component } from "react";
 import employees from "./data.json";
+import { Table, Form, FormControl, Button } from "react-bootstrap";
 // import axios from "axios";
 // import RandomUserAPI from "../utils/utils";
+
+//styling ↓
+const pStyle = { marginLeft: "20px" };
+const tableStyle = { marginLeft: "20px", marginRight: "20px" };
+const buttonCss = {
+  backgroundColor: "navy",
+  color: "white",
+};
 
 export default class index extends Component {
   constructor(props) {
@@ -70,39 +60,62 @@ export default class index extends Component {
   //         this.setState({ employees });
   //       });
   //   }
+
   render() {
     return (
       <div>
-        <input
-          placeholder="Search by first name"
-          onChange={(event) => this.searchName(event)}
-        />
-        <button onClick={this.sortByFirstName}>Sort by first name</button>
-        <table style={{ width: "100%" }}>
-          <tr>
-            <th>Image</th>
-            <th>Name</th>
-            <th>Phone</th>
-            <th>Email</th>
-            <th>DOB</th>
-          </tr>
+        <Form inline>
+          <FormControl
+            type="text"
+            placeholder="Search By First Name"
+            className="mr-sm-2"
+            onChange={(event) => this.searchName(event)}
+            style={pStyle}
+          />
+          <Button style={buttonCss} onClick={this.sortByFirstName}>
+            Search
+          </Button>
+        </Form>
+        <Table
+          striped
+          bordered
+          hover
+          responsive="sm"
+          responsive="md"
+          responsive="lg"
+          responsive="xl"
+          size="sm"
+          borderless
+          style={tableStyle}
+        >
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>DOB</th>
+            </tr>
+          </thead>
           {this.state.employees.map((employee) => {
             const date = employee.dob.date;
             return (
-              <tr>
-                <td>
-                  <img src={employee.picture.thumbnail} />
-                </td>
-                <td>
-                  {employee.name.first} {employee.name.last}
-                </td>
-                <td>{employee.phone}</td>
-                <td>{employee.email}</td>
-                <td>{date.substring(0, 10)}</td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src={employee.picture.thumbnail} />
+                  </td>
+                  <td>
+                    {employee.name.first} {employee.name.last}
+                  </td>
+                  <td>{employee.phone}</td>
+                  <td>{employee.email}</td>
+                  <td>{date.substring(0, 10)}</td>
+                </tr>
+              </tbody>
             );
           })}
-        </table>
+        </Table>
       </div>
     );
   }

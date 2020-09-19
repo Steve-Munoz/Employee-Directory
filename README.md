@@ -1,69 +1,70 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Welcome to Workout Tracker 👋
 
-## Available Scripts
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
-In the project directory, you can run:
+### 🏠 [Homepage](https://github.com/Steve-Munoz/Workout-Tracker)
 
-### `npm start`
+## Summary
 
-test
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-Employee Directory is an App where you can view Employees by entering their first name in the search bar. This app used an JSON file that contained employee data and by using class in React components i was able to create a dyanmic table with all the necessary information for each employees that are displayed in rows.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## User Story
 
-### `npm test`
+- As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prerequisites
 
-### `npm run build`
+For this assignment, the user should be able to conduct the following functionality when interacting with the employee directory application:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Sort the table by at least one category
+- Filter the users by at least one property.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Acceptance Criteria
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React.js
+- Node.js
+- Test Driven Development
+- JavaScript
 
-### `npm run eject`
+## Testing
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Used Axios to fetch data from JSON file and Jest to test that employee data was ACTUALLY being retrieved from this JSON file
+- <img src = "Assets/images/TDD.JPG" width = "300">
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Clone the repository to your local development environment
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```sh
+https://github.com/Steve-Munoz/Employee-Directory.git
+```
 
-## Learn More
+Run `npm install` to install all dependencies. To use the application locally, run `node server.js` in your CLI, and then open http://localhost:3000 in your preferred browswer. The Employee Directory app is live on Heroku for you to use as well.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Deployed Link:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-https://steves-employee-directory.herokuapp.com/
 
-### Code Splitting
+## Author
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+👤 **Steve Munoz**
 
-### Analyzing the Bundle Size
+- <img src = "Assets/images/professional-pic.jpg" width = "150">
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+* Website: https://steve-munoz.github.io/
+* Github: [@Steve-Munoz ](https://github.com/Steve-Munoz)
+* LinkedIn: [@https:\/\/www.linkedin.com\/in\/stevemunoz\/](https://linkedin.com/in/https://www.linkedin.com/in/stevemunoz/)
 
-### Making a Progressive Web App
+## 🤝 Contributing
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Contributions, issues and feature requests are welcome!
 
-### Advanced Configuration
+## Show your support
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Give a ⭐️ if this project helped you!
 
-### Deployment
+## 📝 License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Copyright © 2020 [Steve Munoz](https://github.com/Steve-Munoz).
 
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is [MIT ](MIT License) licensed.
