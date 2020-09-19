@@ -6,6 +6,11 @@ import { Table, Form, FormControl, Button } from "react-bootstrap";
 
 //styling ↓
 const pStyle = { marginLeft: "20px" };
+const tableStyle = { marginLeft: "20px", marginRight: "20px" };
+const buttonCss = {
+  backgroundColor: "navy",
+  color: "white",
+};
 
 export default class index extends Component {
   constructor(props) {
@@ -67,7 +72,7 @@ export default class index extends Component {
             onChange={(event) => this.searchName(event)}
             style={pStyle}
           />
-          <Button onClick={this.sortByFirstName} bg="dark">
+          <Button style={buttonCss} onClick={this.sortByFirstName}>
             Search
           </Button>
         </Form>
@@ -79,7 +84,9 @@ export default class index extends Component {
           responsive="md"
           responsive="lg"
           responsive="xl"
+          size="sm"
           borderless
+          style={tableStyle}
         >
           <thead>
             <tr>
