@@ -49,7 +49,7 @@ Run `npm install` to install all dependencies. To use the application locally, r
 
 👤 **Steve Munoz**
 
-- <img src = "Assets/images/professional-pic.jpg" width = "150">
+- <img src = "Assets/images/professional-pic.jpg" width ="150">
 
 * Website: https://steve-munoz.github.io/
 * Github: [@Steve-Munoz ](https://github.com/Steve-Munoz)
